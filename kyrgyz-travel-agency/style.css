@@ -1,0 +1,119 @@
+/* mobile phone - below 768px
+ipads - between 768px to 1000px
+laptop - above 1000px
+*/
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  padding: 20px 0;
+}
+
+.logo {
+  width: 50%;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+  text-align: center;
+  width: 85%;
+  padding: 0;
+}
+
+li {
+  background-color: blue;
+  margin-bottom: 5px;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bolder;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-delay: 0s;
+}
+
+li:hover {
+  background-color: white;
+  color: blue;
+}
+
+.main-pic {
+  background-image: url(https://learn.seytech.co/assets/projects/html-css/images/mobile_first/main.jpeg);
+  height: 300px;
+  background-position: right;
+  background-size: cover;
+  margin: 10px 0;
+}
+
+.quote {
+  font-family: "Cedarville Cursive", cursive;
+  text-align: center;
+  width: 80%;
+  margin: 5px auto;
+  line-height: 16px;
+}
+
+main {
+  padding: 0 15px;
+}
+
+.article {
+  text-align: center;
+}
+
+.yurt-img {
+  width: 70%;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 40%;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .logo {
+    float: left;
+    width: 25%;
+  }
+
+  ul {
+    float: right;
+    width: 55%;
+    margin-top: 15px;
+  }
+  .clr {
+    clear: both;
+  }
+  .first {
+    float: left;
+    width: 50%;
+  }
+
+  .yurt-img {
+    float: right;
+    width: 50%;
+  }
+
+  .bottom-box .article {
+    display: inline-block;
+    width: 29%;
+    margin: 1%;
+    padding: 1%;
+    vertical-align: top;
+  }
+}
